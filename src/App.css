@@ -1,0 +1,304 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .App {
+        @apply h-screen bg-no-repeat bg-[url('./images/Bitmap.jpg')] bg-scroll
+    }
+}
+
+@layer components {
+    
+    .header-nav {
+        @apply pt-10 flex
+    }
+    .logo {
+        @apply flex ml-11 mr-[500px]
+    }
+    .naverbar {
+        @apply  backdrop-opacity-5 backdrop-invert bg-white/10 w-screen 
+    }
+    .naverbar ul {
+        @apply flex  text-white pl-16
+    }
+    .naverbar ul li {
+        @apply pr-16  pt-8 pb-8 font-display text-[12px] 
+    }
+    .naverbar ul li .active{
+        @apply  border-b-4 pb-6
+    }
+    .homebody {
+        @apply mt-[160px] ml-[100px] font-display flex space-x-96
+    }
+    .bodytext {
+        @apply text-white w-[420px]
+    }
+    .bodytext h1 {
+        @apply text-[120px]
+    }
+    .bodytext p {
+        @apply text-[12px]
+    }
+    .explore {
+        @apply bg-white text-[25px] py-20 mt-10 px-16 rounded-full
+    }
+    .footer {
+        @apply text-white mt-[5px] text-center
+    }
+    .destination-body {
+        @apply  bg-no-repeat bg-[url('./images/Bitmap2.jpg')] h-screen -mt-[122px]
+    }
+    .destination-title {
+        @apply pt-48 pl-32 text-[18px] font-display
+    }
+    .destination-title h1 {
+        @apply text-gray-500
+    }
+    .destination-title span {
+        @apply text-white pl-4
+    }
+    .navbar {
+        @apply pl-[700px] text-white pt-5 font-display
+    }
+    .navbar ul {
+        @apply flex text-[13px]
+    }
+    .navbar ul li {
+        @apply pl-10
+    }
+    .navbar ul li .active{
+        @apply  border-b-4 pb-3
+    }
+    .moon {
+        @apply pl-56 flex
+    }
+    .moon-pic img {
+        @apply h-[300px] w-[300px]
+    }
+    .moon-text {
+        @apply pt-[20px] w-[700px] pl-[220px] text-white font-display
+    }
+    .moon-text h1 {
+        @apply text-[85px]
+    }
+    .moon-text p {
+        @apply text-[10px] pb-10
+    }
+    .moon-text2 {
+        @apply flex text-[12px] pt-5
+    }
+    .moon-text2 h2 {
+        @apply pr-28
+    }
+    .moon-text3 {
+        @apply flex
+    }
+    .moon-text3 p {
+        @apply text-[25px] pb-0 pr-16
+    }
+    .crew {
+        @apply h-screen bg-no-repeat bg-[url('./images/Bitmap25.jpg')] -mt-[122px] pl-44
+    }
+    .crew-heading {
+        @apply pt-[200px] text-[20px]
+    }
+    .crew-heading h5 {
+        @apply text-gray-500 font-display
+    }
+    .crew-heading span {
+        @apply text-white pl-10
+    }
+    .crew-member1 {
+        @apply   justify-center overflow-hidden
+    }
+    .crew-member {
+        @apply  w-[1000px] flex
+    }
+    .crew-text {
+        @apply pt-32 font-display
+    }
+    .crew-text h3 {
+        @apply text-[20px] text-gray-400 pb-2
+    }
+    .crew-text h1 {
+        @apply text-[30px] text-white
+    }
+    .crew-text p {
+        @apply w-[400px] text-[12px]
+    }
+    .crew-pic img {
+        @apply w-[400px] h-[385px]
+    }
+    .technology {
+        @apply h-screen bg-no-repeat bg-[url('./images/Bitmap3.jpg')] -mt-[122px] pl-44
+    }
+    .technology-title {
+        @apply pt-[200px]
+    }
+    .technology-title h5 {
+        @apply text-gray-500 font-display text-[20px]
+    }
+    .technology-title span {
+        @apply text-white pl-10
+    }
+    .tech-navbar {
+        @apply font-display text-[24px] text-white pt-16
+    }
+    .tech-navbar button {
+        @apply  rounded-full border-gray-500 border-[1px] block mt-10 px-4 py-1
+    }
+    .tech-navbar button  .active {
+        @apply  bg-white text-black py-[9px] rounded-full px-4 border-hidden
+    }
+    .technology1 {
+        @apply -mt-[344px] ml-32 flex
+    }
+    .technology-text {
+        @apply pt-[120px] w-[500px] font-display text-white
+    }
+    .technology-text h5 {
+        @apply text-[15px]
+    }
+    .technology-text h1 {
+        @apply text-[40px]
+    }
+    .technology-text p {
+        @apply text-[12px]
+    }
+    .technology-img img {
+        @apply pl-44 h-[400px] -mt-6
+    }
+}
+@media (max-width: 640px) { 
+
+    .App {
+        @apply h-[150vh] bg-no-repeat bg-[url('./images/Bitmap1.jpg')]
+    }
+    .header-nav {
+        @apply pt-10 flex justify-center items-center bg-cover
+    }
+    .logo {
+        @apply flex ml-1 mr-[1px]
+    }
+    .naverbar ul {
+        @apply  hidden
+    }
+    .homebody {
+        @apply mt-[150px] ml-[30px] font-display block space-x-0 justify-center text-justify
+    }
+    .bodytext {
+        @apply  w-[300px]
+    }
+    .bodytext h1 {
+        @apply text-[70px]
+    }
+    .bodytext p {
+        @apply text-[15px]
+    }
+    .explore {
+        @apply bg-white text-[25px] py-[150px] mt-20 px-16 rounded-full w-80
+    }
+    .footer {
+        @apply text-white mt-[5px] text-center
+    }
+    .destination-body {
+        @apply  bg-no-repeat bg-[url('./images/Bitmap2-3.jpg')] h-[170vh] -mt-[122px]
+    }
+    .destination-title {
+        @apply pt-48 pl-10 text-[18px] font-display
+    }
+    .destination-title h1 {
+        @apply text-gray-500
+    }
+    .destination-title span {
+        @apply text-white pl-4
+    }
+    .navbar {
+        @apply pl-[10px] text-white pt-[450px] font-display
+    }
+    .moon {
+        @apply pl-10 block
+    }
+    .moon-pic img {
+        @apply h-[300px] w-[300px] -mt-[400px]
+    }
+    .moon-text {
+        @apply pt-[140px] w-[300px] pl-[10px] text-center
+    }
+    .moon-text p {
+        @apply text-[8px] pb-10
+    }
+    .moon-text2 {
+        @apply flex text-[10px] pt-5
+    }
+    .moon-text2 h2 {
+        @apply pr-28
+    }
+    .moon-text3 p {
+        @apply text-[15px] pb-10 pr-16
+    }
+    .crew {
+        @apply h-[160vh] bg-no-repeat bg-[url('./images/Bitmap25-1.jpg')] -mt-[122px] pl-4
+    }
+    .crew-heading {
+        @apply pt-[200px] text-[20px]
+    }
+    .crew-heading h5 {
+        @apply text-gray-500 font-display
+    }
+    .crew-heading span {
+        @apply text-white pl-10
+    }
+    .crew-member {
+        @apply block w-[500px]
+    }
+    .crew-text {
+        @apply pt-32 font-display
+    }
+    .crew-text h3 {
+        @apply text-[20px] text-gray-400 pb-2
+    }
+    .crew-text h1 {
+        @apply text-[30px] text-white
+    }
+    .crew-text p {
+        @apply w-[400px] text-[12px]
+    }
+    .crew-pic img {
+        @apply w-[400px] h-[500px]
+    }
+    .technology {
+        @apply h-[160vh] bg-no-repeat bg-[url('./images/Bitmap3-1.jpg')] -mt-[122px] pl-4
+    }
+    .technology-title {
+        @apply pt-[200px]
+    }
+    .technology-title h5 {
+        @apply text-[15px]
+    }
+    .technology-title span {
+        @apply pl-5
+    }
+    .tech-navbar {
+        @apply  text-[18px] flex pl-[20px] mt-[350px]
+    }
+    .tech-navbar button {
+        @apply   ml-10
+    }
+    .technology1 {
+        @apply mt-[1px] ml-1 block
+    }
+    .technology-text {
+        @apply pt-[30px] w-[300px]
+    }
+    .technology-text h1 {
+        @apply text-[30px] pb-10
+    }
+    .technology-text p {
+        @apply text-[12px]
+    }
+    .technology-img img {
+        @apply pl-4 h-[300px] -mt-[780px]
+    }
+}
